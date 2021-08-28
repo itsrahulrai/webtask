@@ -1,0 +1,313 @@
+/*------ Scrool to top ----*/
+::-webkit-scrollbar {
+  background: #000000;
+  height: 5px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF7C0E;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF7C0E;
+}
+
+
+.scroll-top {
+  background: #FF7C0E;
+  border: 0;
+  border-radius: 50%;
+  bottom: 0;
+  cursor: pointer;
+  height: 50px;
+  margin: 15px;
+  opacity: 0.75;
+  position: fixed;
+  right: -70px;
+  transition: right 0.2s ease-in-out;
+  width: 50px;
+  z-index: 99;
+}
+.scroll-top.visible {
+  right: 0;
+}
+
+.arrow {
+  border: solid #000000;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  margin-top: 5px;
+  padding: 4px;
+}
+.arrow.up {  
+  transform: rotate(-135deg);
+  color: #fff!important;
+}
+
+/*------ Scrool to top ----*/
+
+
+
+*{
+	margin: 0;
+	padding: 0; 
+}
+.navbar-brand img{
+	height: 40px;
+	padding-left: 10px;
+}
+.navbar-nav li{
+	padding: 0 10 px;
+    text-decoration: none;
+
+}
+.navbar-nav a{
+	float: right;
+	text-align: left;
+}
+#nav-bar ul li a:hover{
+	color: #FF7C0E !important;
+}
+.navbar{
+	background: #fff;
+}
+.navbar-toggler{
+	border: none !important;
+
+}
+.nav-link{
+	color: #555 !important;
+	font-weight: 600;
+	font-size: 16px;
+
+}
+.navbar-nav {
+            margin-left: auto;
+        }
+
+.dropdown {
+    text-decoration: none;
+}
+
+.aboutimg{
+	width: 300px;
+	height: 300px;
+}
+/*------ About ----*/
+#about{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #555;
+}
+.about-content a{
+	text-decoration: none;
+	text-align:justify-all;
+    color: #037CFF
+}
+.about-content a:hover{
+    color: #037CFF !important;
+}
+/*------ About END ----*/
+
+
+
+
+/*------ SERVICES START ----*/
+
+.service-grid {
+    background: #fcfcfc;
+}
+    .service-title h2 {
+    position: relative;
+    margin-bottom: 45px;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1;
+}
+.service-title h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: #FF7C0E;
+    bottom: -25px;
+    margin: auto;
+    right: 0;
+}
+.service-icon {
+    position: relative;
+}
+.service-title p {
+    padding: 0 190px;
+    margin-bottom: 10px;
+}
+.about-info-text h2 {
+    margin-bottom: 23px;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: .9;
+}
+.about-info-text p {
+    padding: 0 100px;
+    font-size: 18px;
+    margin-bottom: 26px;
+    position: relative;
+}
+.about-content p {
+    margin-bottom: 0;
+}
+.about-info-text a {
+    margin-bottom: 20px;
+    position: relative;
+}
+.service-icon i {
+    font-size: 40px;
+    color: #FF7C0E;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.service-wrap {
+    border: 1px solid #e6e6e6;
+    padding: 50px 30px;
+      position: relative;
+}
+
+.service-wrap p{
+      position: relative;
+}
+
+.service-wrap:hover {
+    background-image: url(img/favpng_logo-graphic-design-web-design.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local;
+    transition: all .5s;
+}
+
+.service-wrap:hover:before {
+    background: rgba(0, 0, 0, 0.2901960784313726);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    content: "";
+    top: 0;
+    opacity: 1;
+}
+
+.service-wrap:hover h4,.service-wrap:hover p{
+    color: #fff;
+}
+.service-wrap h4 {
+    font-weight: 600;
+    color: #1e2331;
+    margin-bottom: 17px;
+    font-size: 18px;
+    text-transform: capitalize;
+    position: relative;
+}
+.service-wrap a {
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    color: #FF7C0E;
+}
+    
+
+
+
+#btnget{
+    background-color:#FF7C0E;
+    color: #fff; 
+}
+/*------ SERVICES START ----*/
+
+#navbarmain {
+  padding: 20px 0px;
+}
+
+#navbarmain .nav-link {
+  font-weight: 600;
+  padding: 10px 15px;
+  color: #222;
+  font-family: "Exo", sans-serif;
+  text-transform: capitalize;
+  font-size: 16px;
+  transition: all .25s ease;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.navbar-brand {
+  margin-top: 10px;
+}
+
+.dropdown .dropdown-menu {
+  position: absolute;
+  display: block;
+  background: #fff;
+  min-width: 240px;
+  top: 130%;
+  left: 0;
+  right: 0px;
+  opacity: 0;
+  padding: 0px;
+  visibility: hidden;
+  transition: all 0.3s ease-out 0s;
+  border: 0px;
+  border-radius: 0px;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 115%;
+}
+
+.dropdown .dropdown-item {
+  padding: 13px 20px;
+  border-bottom: 1px solid #eee;
+  background: transparent;
+  font-weight: 400;
+  color: #555;
+}
+
+
+
+
+/*------ Testimonials START ----*/
+
+
+/*------ Testimonials END ----*/
+
+/* default list style css */
+ul{
+    margin: 0px;
+    padding: 0px;
+  	}
+
+	ul li{
+	list-style: none;
+    }
+
+
+/*------ Navigation ----*/
+#nav-bar{
+	position: sticky;
+	top:0;
+	z-index: 10;
+}
+
+
+
+
+
